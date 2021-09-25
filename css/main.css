@@ -87,12 +87,138 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*General Styles */
+/* -------------------- Base Header - Footer Styles -------------------- */
+
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+/* Hero Area */
+
+.hero-area {
+  padding: 50px 0;
+  background-image: url('../img/girl-on-bridge72ppi.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Aside */
+
+aside {
+  padding: 25px 0 50px 0;
+  background-color: #527158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* Features */
+
+.features {
+  padding: 50px 0;
+  background-image: url('../img/unplugged-icon-bg72ppi.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: row wrap;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #527158
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #2a423a;
+}
+
+/* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #527158;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* ----------------------------General Styles --------------------------- */
 
 html {
   font-size: 16px;
 }
-
+ 
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -141,10 +267,6 @@ address {
   font-style: normal;
 }
 
-.content-wrapper {
-
-}
-
 header {
   padding: 15px 0;
   background-color: #202322;
@@ -157,6 +279,13 @@ header {
 
 header .content-wrapper {
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-divider {
@@ -173,25 +302,8 @@ head nav ul {
   width: 10%;
 }
 
-.hero-area {
-  padding: 50px 0;
-  background-image: url('../img/girl-on-bridge72ppi.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-aside {
-  padding: 25px 0 50px 0;
-  background-color: #527158;
-}
-
-.features {
-  padding: 50px 0;
-  background-image: url('../img/unplugged-icon-bg72ppi.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.features .content-wrapper {
+  margin: 0;
 }
 
 .features article {
@@ -205,6 +317,10 @@ aside {
 .reviews {
   padding: 50px 0;
   background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .reviews h3 {
@@ -312,31 +428,84 @@ footer p {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-/* header,
-footer {
+
+@media only screen and (min-width: 768px) {
+  
+  header {
+
+  }
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    
+  }
+
+  .header-divider {
+    display: none;
+}
+
+  aside .content-wrapper {
+  margin: 50px 0;
+} 
+
+  aside .content-wrapper .form-description, 
+  aside .content-wrapper .form {
+    width: 45%;
+    margin: 0;
+  } 
+
+  .features article {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-header .content-wrapper {
-  display: flex;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
   
-}
+  .features .features-item-description {
+    width: 50%;
+  }
 
-.hero-area {
-  display: flex;
-}
+  .reviews article {
 
-.aside {
-  display: flex;
-}
+  }
 
-.features {
-  display: flex;
-} */
+  .reviews article div {
+    width: 50%;
+  }
 
+  footer .content-wrapper {
+    width: 78%;
+    margin: 100px 0;
+  }
 
+  .footer-content {
+
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+   
+  @media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+  }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
