@@ -313,7 +313,7 @@ input[type=button] {
 }
 
 .features h2 {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .features article {
@@ -330,6 +330,11 @@ input[type=button] {
 
 .features .content-wrapper {
   margin: 0;
+}
+
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features p {
