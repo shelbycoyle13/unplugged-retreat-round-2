@@ -183,6 +183,7 @@ header figure {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
