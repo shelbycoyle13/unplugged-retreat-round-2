@@ -665,6 +665,43 @@ input[type=button] {
   footer .copyright {
     width: 100%;
   }
+/* ==========================================================================
+   About Page
+   ==========================================================================*/
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.mission .content-wrapper h2 {
+  font-size: 2.25em;
+}
+
+.mission-content p {
+  width: 45%;
+}
+
+.map figure {
+  padding-bottom: 45.5%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+  font-size: 2.25em;
+}
+
+.contact-content h4 {
+  font-size: 1.5em;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
  /* ==========================================================================
    FAQ Page
