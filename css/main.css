@@ -845,6 +845,10 @@ input[type=button] {
       width: 96%;
     }
 
+    .map figure {
+      padding-bottom: 37.5%;
+    }
+
     .contact-content h4 {
       font-size: 1.875em;
     }
