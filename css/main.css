@@ -142,7 +142,7 @@ p {
 }
 
 p footer {
-  line-height: 1.5;
+  line-height: 1.285;
 }
 
 img {
@@ -205,6 +205,8 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
 }
 
 header nav ul {
@@ -457,6 +459,10 @@ input[type=button] {
   margin-bottom: 50px;
 }
 
+.faq-content h4 {
+  line-height: 1.333;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -692,6 +698,7 @@ input[type=button] {
 
   footer h4 {
     margin-bottom: 40px;
+    font-size: 1.5em;
   }
 
   footer .social-icons {
@@ -758,7 +765,6 @@ input[type=button] {
     font-size: 2.25em;
   }
 
-  .faq h4,
   .faq p {
       font-size: .875em;
       line-height: 1.125;
@@ -766,6 +772,7 @@ input[type=button] {
 
   .faq h4 {
     margin-top: 0;
+    font-size: 1.5em;
   }
 
 @media only screen and (min-width: 1200px) {
@@ -777,16 +784,17 @@ input[type=button] {
     margin: 120px 0;
   }
 
+  h2 {
+    font-size: 2.25em;
+  }
+
   h3 {
     font-size: 1.875em;
   }
 
   p {
     font-size: 1.125em;
-  }
-
-  h2 {
-    font-size: 2.25em;
+    line-height: 1.333;
   }
 
   h4 {
@@ -819,8 +827,8 @@ input[type=button] {
 
   aside .content-wrapper {
     max-width: 787px;
-    margin: 50px 80px;
-    justify-content: space-around;
+    margin: 50px 0px;
+    justify-content: space-between;
   } 
   
     aside .content-wrapper .form-description, 
